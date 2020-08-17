@@ -1,0 +1,289 @@
+*{
+    font-family: sans-serif
+}
+.header{
+    background: url('../IMAGENES/bg-header.jpg');
+    height: 700px;
+    object-fit: cover;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.STRICT{
+    height: 100px;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+    background: rgb(240,240,240);
+       
+}
+
+img[alt="logo-strict"]{
+    height: 35px;
+    animation:logaso 2s ease-in-out;
+}
+
+@keyframes logaso{
+    0%{
+        transform: translateX(-20vw);
+        opacity: 0;
+    }
+    50%{
+        opacity: .2;
+    }
+    70%{
+        transform: rotate(15deg) scale(1.2);
+    
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.info-header > h2{
+    font-size:120px;
+    color:#fff;
+    text-align: center;
+}
+
+.info-header > hr{
+    background: #2c85d1;
+    height: 2px;
+    width: 50vw;
+    border: none;
+}
+
+.info-header > h3{
+    color:#fff;
+    font-size: 18px;
+        text-align:center;
+}
+
+.info-header > input{
+    padding:20px 35px;
+    background: none;
+    border:2px solid  #2c85d1;
+   margin-left: 35%;
+    color:#fff;
+}
+
+.simple{
+   
+    display: flex;
+    justify-content: center;
+    background: rgb(240,240,240);
+    height: 280px
+}
+
+.encabezado{
+    width:70%;
+     margin-top: 40px;
+}
+
+.encabezado > h3{
+    text-align: center;
+    margin:20px;
+    font-size:35px;
+    color: rgb(50,50,50);
+}
+.encabezado > p{
+    text-align: center;
+    color:rgb(150,150,150);
+    padding:10px;
+}
+
+.servicios{
+    height: 250px;
+    background: #fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.servicios > div > img{
+    height: 80px;
+    padding-left: 6vw
+}
+
+.servicios > div{
+    width: 18vw;
+}
+
+.servicios > div h2{
+    font-size:18px;
+    text-align: center;
+    padding: 15px;
+     color: rgb(50,50,50);
+}
+
+.servicios > div p{
+    font-size:12px;
+    text-align: center;
+     color:rgb(150,150,150);
+}
+
+.encabezado-2{
+    height: 200px; 
+   
+    background: rgb(240,240,240);
+   padding: 100px 10vw;
+   
+}
+
+.encabezado-2 > h2{
+      color: rgb(50,50,50);
+    font-size:32px;
+    display: block;
+    text-align: center;
+}
+
+.encabezado-2 > h3{
+     color:rgb(150,150,150);
+    font-size: 12px;
+     display: block;
+     text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+     background: rgb(240,240,240);
+    grid-column-gap: 25px;
+     grid-row-gap: 25px;
+   padding-bottom: 80px;
+     
+}
+
+.Formulario{
+    height: 600px;
+    background: #20203b;    
+    background-image: url(../IMAGENES/bg-stay.jpg);
+    background-size:cover;
+   
+}
+.Formulario > div h2{
+    font-size:32px;
+    color: #fff;
+    text-align:center;
+    padding-top: 55px;
+    
+}
+
+.Formulario > div h3{
+     font-size:12px;
+    text-align: center;
+     color:rgb(150,150,150);
+    padding:15px;
+}
+form{
+    margin: 30px;
+    display: flex;
+   align-items:center;
+    flex-direction: column;
+}
+form > input{
+    display: block;
+    width: 35vw;
+    height: 50px;
+    margin-top:20px;
+    background: none;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 15px;
+}
+
+form > input::placeholder{
+    font-size: 12px;
+    padding-left: 5px;
+    
+    
+}
+
+
+form > textarea{
+    width: 35vw;
+    height: 150px;
+    margin-top:20px;
+    background: none;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 3px;
+    resize: none;
+    color: #fff;
+    font-size: 12px;
+     padding-left: 15px;
+     padding-top: 10px;
+}
+
+form > textarea::placeholder{
+    font-size: 12px;
+    padding-left: 5px;
+ 
+    
+}
+
+
+.contenedor__submit{
+    display: flex;
+    background: none;
+    width: 35vw;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+}
+.contenedor__checkbox{
+    display: flex;
+    margin-top: 15px;
+    font-size:10px;
+   color:rgb(150,150,150);
+    padding-left: 5px;
+}
+
+.contenedor__checkbox > h3{
+     padding-left: 10px;
+}
+input[type="checkbox"]{
+    height: 13px;
+   background: rgb(150,150,150);
+}
+
+input[type="submit"]{
+    height:40px; 
+    width: 8vw;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #2c85d1;
+    background: none;
+    border-radius: 3px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(240,240,240);
+    height: 75px;
+}
+
+.copy > h3 {
+    font-size:12px;
+ color:rgb(150,150,150);
+    padding: 30px;
+}
+
+.redes-sociales{
+    display: flex;
+   
+    width: 12vw;
+    justify-content: space-between;
+        margin-top:15px;
+}
+
+.redes-sociales img{
+    height: 35px;
+    
+}
